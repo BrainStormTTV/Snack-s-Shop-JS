@@ -1,0 +1,120 @@
+:root {
+    --bg-primary: #e5e6ea;
+    --bg-lighter: #fefeff;
+    --bg-summary: #f5f4f7;
+    --text-darker: #020203;
+    --text-dark: #636262;
+    --button-danger: #fa7272;
+    --button-ckeckout: #5d50dd;
+    --summary-w: 740px;
+    --container--w: 90%;
+    --padding-main: 120px;
+    --margin-fixed: 55px;
+    --divider-h: 2px;
+    --text-product-size: 36px;
+    --text-remove-size: 29px;
+    --text-title-tb-size: 36px;
+    --text-title-tb-weight: bold;
+    --text-title-size: 50px;
+    --text-tile-weight: bold;
+    --text-title-let-space: -1px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dashed; */
+}
+
+
+body {
+    background-color: var(--bg-primary);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: var(--container--w);
+    height: 90%;
+    display: flex;
+
+
+    .left {
+        background-color: var(--bg-lighter);
+        width: calc((100% / 12) * 8);
+        height: 100%;
+        padding: 2rem;
+    }
+
+    .right {
+        background-color: var(--bg-summary);
+        width: calc((100% / 12) * 4);
+        height: 100%;
+        padding: 2rem;
+    }
+}
+
+/* Left */
+.container_top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--text-dark);
+    padding: 2rem 0;
+}
+
+.container_bottom {
+    width: 100%;
+}
+
+.textalign-left {
+    text-align: left;
+}
+
+.textalign-center {
+    text-align: center;
+}
+
+.df {
+    display: flex;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+table {
+    width: 100%;
+
+    & img {
+        width: 100px;
+        height: 100px;
+    }
+
+    & .remove-all {
+        border: 0;
+        background-color: transparent;
+        color: red;
+
+    }
+
+    & .quantity_button {
+
+        border: none;
+        background-color: var(--bg-lighter);
+        font-weight: bolder;
+
+    }
+
+    & .quantity_input {
+
+        width: 2rem;
+        height: 2rem;
+        margin: 0 0.5rem;
+        text-align: center;
+
+    }
+}
